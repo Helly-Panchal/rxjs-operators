@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class SidebarComponent {
 
+  public operatorsList = [
+    {
+      name: 'of',
+      link: '/of'
+    },
+    {
+      name: 'from',
+      link: '/from'
+    }
+  ];
+
 }

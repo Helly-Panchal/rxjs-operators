@@ -4,7 +4,7 @@ import { OfOperatorComponent } from './operators/of-operator/of-operator.compone
 import { FromOperatorComponent } from './operators/from-operator/from-operator.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'operators', pathMatch: 'full' },
+  { path: '', redirectTo: 'of', pathMatch: 'full' },
   { path: 'of', component: OfOperatorComponent },
   { path: 'from', component: FromOperatorComponent },
 ];

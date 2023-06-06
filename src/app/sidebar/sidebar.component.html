@@ -1,1 +1,35 @@
-<p>sidebar works!</p>
+<div class="list-group main-container m-4">
+  <h3 class="list-group-item list-group-item-action active">Operators</h3>
+  <div class="">
+    <div class="sidebar-inner-items">
+      <ul class="list-group list-group-flush" *ngFor="let operator of operatorsList">
+        <a [routerLink]="operator.link">
+          <li class="list-group-item">{{operator.name}}</li>
+        </a>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- responsive sidebar -->
+<div class="sidebar-container">
+  <div class="offcanvas offcanvas-end" id="demo">
+    <div class="offcanvas-header">
+      <h3 class="list-group-item list-group-item-action active">Operators</h3>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="">
+      <div class="sidebar-inner-items">
+        <ul class="list-group list-group-flush" *ngFor="let operator of operatorsList">
+          <a [routerLink]="operator.link">
+            <li class="list-group-item">{{operator.name}}</li>
+          </a>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <button class="btn btn-secondary" id="sidebar-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#demo"
+    title="Sidebar">
+    <span><i class="fa-solid fa-angle-left fa-lg"></i></span>
+  </button>
+</div>
