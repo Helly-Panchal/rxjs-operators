@@ -1,0 +1,42 @@
+<h3 class="d-flex justify-content-center pt-3">From Operator</h3>
+
+<div class="container d-flex justify-content-center pt-2">
+  <p>
+    Turn an array, promise, or iterable into an observable. <br>
+    💡 This operator can be used to convert a promise to an observable! <br>
+    💡 For arrays and iterables, all contained values will be emitted as a sequence! <br>
+    💡 This operator can also be used to emit a string as a sequence of characters! <br>
+  </p>
+</div>
+
+<div class="row row-cols-1 row-cols-md-4 p-4">
+  <div class="col-md-4 mt-4">
+    <p class="bg-light border rounded py-2 px-3">
+      <strong>Data: from([1,2,3,4,5])</strong>
+    </p>
+    <hr>
+    <ul>
+      <li *ngFor="let value of observableListArray">{{value}}</li>
+    </ul>
+  </div>
+
+  <div class="col-md-4 mt-4">
+    <p class="bg-light border rounded py-2 px-3">
+      <strong>Data: from(promise)</strong>
+    </p>
+    <hr>
+    <ul>
+      <li *ngFor="let value of observableListPromise">{{value}}</li>
+    </ul>
+  </div>
+
+  <div class="col-md-4 mt-4">
+    <p class="bg-light border rounded py-2 px-3">
+      <strong>Data: from('Helly')</strong>
+    </p>
+    <hr>
+    <ul>
+      <li *ngFor="let value of observableListString">{{value}}</li>
+    </ul>
+  </div>
+</div>

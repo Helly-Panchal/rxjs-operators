@@ -1,0 +1,35 @@
+<h3 class="d-flex justify-content-center pt-3">Of Operator</h3>
+
+<div class="row row-col-1 row-col-md-3 p-4">
+  <div class="col-md-4 mt-4">
+    <p class="bg-light border rounded py-2 px-3">
+      <strong>Data: of('helly', 'arti', 'khushbu')</strong>
+    </p>
+    <hr>
+    <ul>
+      <li *ngFor="let value of observableListString">{{value}}</li>
+    </ul>
+  </div>
+
+  <div class="col-md-4 mt-4">
+    <p class="bg-light border rounded py-2 px-3">
+      <strong>Data: of(1,2,3,4,5)</strong>
+    </p>
+    <hr>
+    <ul>
+      <li *ngFor="let value of observableListNumber">{{value}}</li>
+    </ul>
+  </div>
+
+  <div class="col-md-4 mt-4">
+    <p class="bg-light border rounded py-2 px-3">
+      <strong>Data: of(&#123;a:'helly', b:'arti', c:'khushbu'&#125;)</strong>
+    </p>
+    <hr>
+    <ul *ngFor="let value of observableListObject">
+      <li>{{value | json}}</li>
+    </ul>
+  </div>
+</div>
+<!-- { - &#123; -->
+<!-- } - &#125; -->
