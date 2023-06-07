@@ -7,6 +7,7 @@ import { TakeUntilComponent } from './take-until/take-until.component';
 import { DebounceTimeComponent } from './debounce-time/debounce-time.component';
 import { FormsModule } from '@angular/forms';
 import { ConcatWithComponent } from './concat-with/concat-with.component';
+import { MergeComponent } from './merge/merge.component';
 
 
 
@@ -17,7 +18,8 @@ import { ConcatWithComponent } from './concat-with/concat-with.component';
     TakeComponent,
     TakeUntilComponent,
     DebounceTimeComponent,
-    ConcatWithComponent
+    ConcatWithComponent,
+    MergeComponent
   ],
   imports: [
     CommonModule,
