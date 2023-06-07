@@ -31,6 +31,10 @@ export class SidebarComponent {
     {
       name: 'ConcatWith',
       link: '/concat'
+    },
+    {
+      name: 'Merge',
+      link: '/merge'
     }
   ];
 

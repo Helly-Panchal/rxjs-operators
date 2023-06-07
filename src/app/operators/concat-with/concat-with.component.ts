@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subject, concatWith, interval, map, take, takeUntil } from 'rxjs';
 
 @Component({
@@ -6,7 +6,7 @@ import { Subject, concatWith, interval, map, take, takeUntil } from 'rxjs';
   templateUrl: './concat-with.component.html',
   styleUrls: ['./concat-with.component.scss']
 })
-export class ConcatWithComponent implements OnInit {
+export class ConcatWithComponent implements OnInit, OnDestroy {
   public sub$ = new Subject();
   public observableList: number[] = [];
 
@@ -18,5 +18,10 @@ export class ConcatWithComponent implements OnInit {
     source1$.pipe(concatWith(source2$, source3$), takeUntil(this.sub$)).subscribe((res: any) => {
       this.observableList.push(res);
     });
+  }
+
+  public ngOnDestroy(): void {
+    this.sub$.next(0);
+    this.sub$.unsubscribe();
   }
 }
