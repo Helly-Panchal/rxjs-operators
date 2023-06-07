@@ -6,6 +6,7 @@ import { TakeComponent } from './take/take.component';
 import { TakeUntilComponent } from './take-until/take-until.component';
 import { DebounceTimeComponent } from './debounce-time/debounce-time.component';
 import { FormsModule } from '@angular/forms';
+import { ConcatWithComponent } from './concat-with/concat-with.component';
 
 
 
@@ -15,7 +16,8 @@ import { FormsModule } from '@angular/forms';
     FromOperatorComponent,
     TakeComponent,
     TakeUntilComponent,
-    DebounceTimeComponent
+    DebounceTimeComponent,
+    ConcatWithComponent
   ],
   imports: [
     CommonModule,
