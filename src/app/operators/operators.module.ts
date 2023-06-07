@@ -5,6 +5,7 @@ import { FromOperatorComponent } from './from-operator/from-operator.component';
 import { TakeComponent } from './take/take.component';
 import { TakeUntilComponent } from './take-until/take-until.component';
 import { DebounceTimeComponent } from './debounce-time/debounce-time.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -17,7 +18,8 @@ import { DebounceTimeComponent } from './debounce-time/debounce-time.component';
     DebounceTimeComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
   ]
 })
 export class OperatorsModule { }

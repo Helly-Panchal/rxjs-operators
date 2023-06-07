@@ -4,6 +4,7 @@ import { OfOperatorComponent } from './operators/of-operator/of-operator.compone
 import { FromOperatorComponent } from './operators/from-operator/from-operator.component';
 import { TakeComponent } from './operators/take/take.component';
 import { TakeUntilComponent } from './operators/take-until/take-until.component';
+import { DebounceTimeComponent } from './operators/debounce-time/debounce-time.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'of', pathMatch: 'full' },
@@ -11,6 +12,7 @@ const routes: Routes = [
   { path: 'from', component: FromOperatorComponent },
   { path: 'take', component: TakeComponent },
   { path: 'take-until', component: TakeUntilComponent },
+  { path: 'debounce-time', component: DebounceTimeComponent },
 ];
 
 @NgModule({

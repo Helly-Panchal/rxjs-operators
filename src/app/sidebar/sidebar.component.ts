@@ -23,6 +23,10 @@ export class SidebarComponent {
     {
       name: 'TakeUntil',
       link: '/take-until'
+    },
+    {
+      name: 'Debounce Time',
+      link: '/debounce-time'
     }
   ];
 
