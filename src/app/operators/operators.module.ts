@@ -4,6 +4,7 @@ import { OfOperatorComponent } from './of-operator/of-operator.component';
 import { FromOperatorComponent } from './from-operator/from-operator.component';
 import { TakeComponent } from './take/take.component';
 import { TakeUntilComponent } from './take-until/take-until.component';
+import { DebounceTimeComponent } from './debounce-time/debounce-time.component';
 
 
 
@@ -12,7 +13,8 @@ import { TakeUntilComponent } from './take-until/take-until.component';
     OfOperatorComponent,
     FromOperatorComponent,
     TakeComponent,
-    TakeUntilComponent
+    TakeUntilComponent,
+    DebounceTimeComponent
   ],
   imports: [
     CommonModule
