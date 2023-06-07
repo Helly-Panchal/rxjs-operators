@@ -27,6 +27,10 @@ export class SidebarComponent {
     {
       name: 'Debounce Time',
       link: '/debounce-time'
+    },
+    {
+      name: 'ConcatWith',
+      link: '/concat'
     }
   ];
 
