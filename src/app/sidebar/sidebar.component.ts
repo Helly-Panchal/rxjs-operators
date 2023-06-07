@@ -9,12 +9,20 @@ export class SidebarComponent {
 
   public operatorsList = [
     {
-      name: 'of',
+      name: 'Of',
       link: '/of'
     },
     {
-      name: 'from',
+      name: 'From',
       link: '/from'
+    },
+    {
+      name: 'Take',
+      link: '/take'
+    },
+    {
+      name: 'TakeUntil',
+      link: '/take-until'
     }
   ];
 

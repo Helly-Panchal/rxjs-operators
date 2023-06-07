@@ -1,0 +1,37 @@
+<h3 class="d-flex justify-content-center pt-3">Take Operator</h3>
+
+<div class="container d-flex flex-column align-items-center pt-2">
+  <p>
+    When you are interested in only the first emission, you can use take. <br>
+  </p>
+  <p>
+    <strong>USECASE:</strong><br>
+    💡 You want to see what the user first clicked on when they entered the page! <br>
+    💡 You want to subscribe to the click event and just take the first emission! <br>
+    💡 <b>Take</b> is the opposite of <b>skip</b> where take will take the first n number of emissions while skip will
+    skip the first n number of emissions. <br>
+  </p>
+</div>
+
+<div class="row row-cols-1 row-cols-md-4 p-4">
+  <div class="col-md-6 mt-4">
+    <p class="bg-light border rounded py-2 px-3">
+      <b>Take one value from source</b><br>
+      Data: of(1,2,3,4,5).pipe(take(1))
+    </p>
+    <hr>
+    <ul>
+      <li *ngFor="let value of observableListOne">{{value}}</li>
+    </ul>
+  </div>
+  <div class="col-md-6 mt-4">
+    <p class="bg-light border rounded py-2 px-3">
+      <b>Take five value from source</b><br>
+      Data: interval(300).pipe(take(5))
+    </p>
+    <hr>
+    <ul>
+      <li *ngFor="let value of observableListTwo">{{value}}</li>
+    </ul>
+  </div>
+</div>

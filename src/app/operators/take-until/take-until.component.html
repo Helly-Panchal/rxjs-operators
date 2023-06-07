@@ -1,0 +1,40 @@
+<h3 class="d-flex justify-content-center pt-3">TakeUntil Operator</h3>
+
+<div class="container d-flex flex-column align-items-center pt-2">
+  <p>
+    💡 If you want to take a variable number of values based on some logic, or another observable, you can use
+    takeUntil. <br>
+    💡 <b>TakeUntil</b> Emit values until provided observable emits.. <br>
+    💡 The takeUntil operator in RxJS is a higher-order observable operator that allows you to complete an observable
+    when a second observable emits a value. <br>
+    💡 You can use any observable with the takeUntil operator. This operator is useful for cases where you need to
+    cancel an ongoing process or cleanup resources when another observable emits a value.
+  </p>
+</div>
+
+<div class="row row-cols-1 row-cols-md-4 p-4">
+  <div class="col-md-6 mt-4">
+    <p class="bg-light border rounded py-2 px-3">
+      <b>Take value until second observable start emitting</b><br>
+      Data: interval(400).pipe(takeUntil(timer(3000)))
+    </p>
+    <hr>
+    <ul>
+      <li *ngFor="let value of observableListOne">{{value}}</li>
+    </ul>
+  </div>
+  <div class="col-md-6 mt-4">
+    <p class="bg-light border rounded py-2 px-3">
+      <b>USECASE: </b><br>
+    </p>
+    <hr>
+    <ul>
+      <li>Remove multiple subscription using takeUntil.</li>
+      <ul class="mt-2">
+        <li>Take one subject and pass that into takeuntil.</li>
+        <li>OnDestroy this subject will emit any value and all the subscription will be lost.</li>
+        <li>Remember to unsubscribe the subject.</li>
+      </ul>
+    </ul>
+  </div>
+</div>
