@@ -35,6 +35,10 @@ export class SidebarComponent {
     {
       name: 'Merge',
       link: '/merge'
+    },
+    {
+      name: 'Map',
+      link: '/map'
     }
   ];
 

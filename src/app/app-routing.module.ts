@@ -7,6 +7,7 @@ import { TakeUntilComponent } from './operators/take-until/take-until.component'
 import { DebounceTimeComponent } from './operators/debounce-time/debounce-time.component';
 import { ConcatWithComponent } from './operators/concat-with/concat-with.component';
 import { MergeComponent } from './operators/merge/merge.component';
+import { MapComponent } from './operators/map/map.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'of', pathMatch: 'full' },
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'debounce-time', component: DebounceTimeComponent },
   { path: 'concat', component: ConcatWithComponent },
   { path: 'merge', component: MergeComponent },
+  { path: 'map', component: MapComponent },
 ];
 
 @NgModule({
