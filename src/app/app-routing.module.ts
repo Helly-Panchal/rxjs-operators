@@ -10,6 +10,7 @@ import { MergeComponent } from './operators/merge/merge.component';
 import { MapComponent } from './operators/map/map.component';
 import { IntervalComponent } from './operators/interval/interval.component';
 import { TimerComponent } from './operators/timer/timer.component';
+import { FilterComponent } from './operators/filter/filter.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'of', pathMatch: 'full' },
@@ -23,6 +24,7 @@ const routes: Routes = [
   { path: 'map', component: MapComponent },
   { path: 'interval', component: IntervalComponent },
   { path: 'timer', component: TimerComponent },
+  { path: 'filter', component: FilterComponent },
 ];
 
 @NgModule({

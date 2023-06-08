@@ -48,6 +48,10 @@ export class SidebarComponent {
       name: 'Timer',
       link: '/timer'
     },
+    {
+      name: 'Filter',
+      link: '/filter'
+    },
   ];
 
 }
