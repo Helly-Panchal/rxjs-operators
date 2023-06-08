@@ -1,1 +1,23 @@
-<p>interval works!</p>
+<h3 class="d-flex justify-content-center pt-3">Interval Operator</h3>
+
+<div class="container d-flex justify-content-center pt-2">
+  <p>
+    💡 Emit numbers in sequence based on provided timeframe.
+  </p>
+</div>
+
+<div class="row row-cols-1 row-cols-md-4 p-4 d-flex justify-content-center">
+  <div class="col-md-12 mt-4">
+    <p class="bg-light border rounded py-2 px-3">
+      <strong>Data: </strong> interval(500)
+    </p>
+    <hr>
+    <div class="d-flex justify-content-center">
+      <button type="button" class="btn btn-success btn-sm w-25" (click)="stop()">Stop</button>
+      <button type="button" class="btn btn-primary btn-sm w-25 ms-3" (click)="start()">Start</button>
+    </div>
+    <ul class="mt-3 d-flex flex-column align-items-center">
+      <li *ngFor="let num of observableContainer"><b>{{num}}</b></li>
+    </ul>
+  </div>
+</div>

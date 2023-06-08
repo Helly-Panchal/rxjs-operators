@@ -39,7 +39,11 @@ export class SidebarComponent {
     {
       name: 'Map',
       link: '/map'
-    }
+    },
+    {
+      name: 'Interval',
+      link: '/interval'
+    },
   ];
 
 }
