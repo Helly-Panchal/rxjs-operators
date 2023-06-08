@@ -11,6 +11,7 @@ import { MergeComponent } from './merge/merge.component';
 import { MapComponent } from './map/map.component';
 import { IntervalComponent } from './interval/interval.component';
 import { TimerComponent } from './timer/timer.component';
+import { FilterComponent } from './filter/filter.component';
 
 
 
@@ -25,7 +26,8 @@ import { TimerComponent } from './timer/timer.component';
     MergeComponent,
     MapComponent,
     IntervalComponent,
-    TimerComponent
+    TimerComponent,
+    FilterComponent
   ],
   imports: [
     CommonModule,
