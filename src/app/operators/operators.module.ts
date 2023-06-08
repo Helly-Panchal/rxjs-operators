@@ -10,6 +10,7 @@ import { ConcatWithComponent } from './concat-with/concat-with.component';
 import { MergeComponent } from './merge/merge.component';
 import { MapComponent } from './map/map.component';
 import { IntervalComponent } from './interval/interval.component';
+import { TimerComponent } from './timer/timer.component';
 
 
 
@@ -23,7 +24,8 @@ import { IntervalComponent } from './interval/interval.component';
     ConcatWithComponent,
     MergeComponent,
     MapComponent,
-    IntervalComponent
+    IntervalComponent,
+    TimerComponent
   ],
   imports: [
     CommonModule,
