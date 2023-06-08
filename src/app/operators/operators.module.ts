@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { ConcatWithComponent } from './concat-with/concat-with.component';
 import { MergeComponent } from './merge/merge.component';
 import { MapComponent } from './map/map.component';
+import { IntervalComponent } from './interval/interval.component';
 
 
 
@@ -21,7 +22,8 @@ import { MapComponent } from './map/map.component';
     DebounceTimeComponent,
     ConcatWithComponent,
     MergeComponent,
-    MapComponent
+    MapComponent,
+    IntervalComponent
   ],
   imports: [
     CommonModule,
