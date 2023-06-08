@@ -44,6 +44,10 @@ export class SidebarComponent {
       name: 'Interval',
       link: '/interval'
     },
+    {
+      name: 'Timer',
+      link: '/timer'
+    },
   ];
 
 }
