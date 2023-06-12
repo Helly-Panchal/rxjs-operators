@@ -14,6 +14,7 @@ import { TimerComponent } from './timer/timer.component';
 import { FilterComponent } from './filter/filter.component';
 import { TapComponent } from './tap/tap.component';
 import { ConcatMapComponent } from './concat-map/concat-map.component';
+import { MergeMapComponent } from './merge-map/merge-map.component';
 
 
 
@@ -31,7 +32,8 @@ import { ConcatMapComponent } from './concat-map/concat-map.component';
     TimerComponent,
     FilterComponent,
     TapComponent,
-    ConcatMapComponent
+    ConcatMapComponent,
+    MergeMapComponent
   ],
   imports: [
     CommonModule,

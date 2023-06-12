@@ -13,6 +13,7 @@ import { TimerComponent } from './operators/timer/timer.component';
 import { FilterComponent } from './operators/filter/filter.component';
 import { TapComponent } from './operators/tap/tap.component';
 import { ConcatMapComponent } from './operators/concat-map/concat-map.component';
+import { MergeMapComponent } from './operators/merge-map/merge-map.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'of', pathMatch: 'full' },
@@ -29,6 +30,7 @@ const routes: Routes = [
   { path: 'filter', component: FilterComponent },
   { path: 'tap', component: TapComponent },
   { path: 'concat-map', component: ConcatMapComponent },
+  { path: 'merge-map', component: MergeMapComponent },
 ];
 
 @NgModule({

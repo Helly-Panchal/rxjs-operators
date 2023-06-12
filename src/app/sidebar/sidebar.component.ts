@@ -60,6 +60,10 @@ export class SidebarComponent {
       name: 'ConcatMap',
       link: '/concat-map'
     },
+    {
+      name: 'MergeMap',
+      link: '/merge-map'
+    },
   ];
 
 }
