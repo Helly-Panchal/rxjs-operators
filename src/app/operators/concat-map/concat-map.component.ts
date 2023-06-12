@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subject, concatAll, concatMap, from, map, of, takeUntil } from 'rxjs';
 
 @Component({
@@ -6,7 +6,7 @@ import { Subject, concatAll, concatMap, from, map, of, takeUntil } from 'rxjs';
   templateUrl: './concat-map.component.html',
   styleUrls: ['./concat-map.component.scss']
 })
-export class ConcatMapComponent {
+export class ConcatMapComponent implements OnInit, OnDestroy {
   public source$ = from(['Tech', 'Comedy', 'News']);
   public sub$ = new Subject();
   public sourceObsContainer: string[] = [];
@@ -50,5 +50,10 @@ export class ConcatMapComponent {
     ).subscribe((res) => {
       this.sourceObsContainer3.push(res);
     });
+  }
+
+  public ngOnDestroy(): void {
+    this.sub$.next(0);
+    this.sub$.unsubscribe();
   }
 }
