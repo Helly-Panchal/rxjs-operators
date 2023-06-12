@@ -12,6 +12,7 @@ import { IntervalComponent } from './operators/interval/interval.component';
 import { TimerComponent } from './operators/timer/timer.component';
 import { FilterComponent } from './operators/filter/filter.component';
 import { TapComponent } from './operators/tap/tap.component';
+import { ConcatMapComponent } from './operators/concat-map/concat-map.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'of', pathMatch: 'full' },
@@ -27,6 +28,7 @@ const routes: Routes = [
   { path: 'timer', component: TimerComponent },
   { path: 'filter', component: FilterComponent },
   { path: 'tap', component: TapComponent },
+  { path: 'concat-map', component: ConcatMapComponent },
 ];
 
 @NgModule({

@@ -56,6 +56,10 @@ export class SidebarComponent {
       name: 'Tap',
       link: '/tap'
     },
+    {
+      name: 'ConcatMap',
+      link: '/concat-map'
+    },
   ];
 
 }

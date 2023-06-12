@@ -1,0 +1,9 @@
+.ex-1{
+  display: flex;
+}
+
+@media only screen and (max-width : 470px) {
+  .ex-1{
+    display: block;
+  }
+}
