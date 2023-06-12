@@ -13,6 +13,7 @@ import { IntervalComponent } from './interval/interval.component';
 import { TimerComponent } from './timer/timer.component';
 import { FilterComponent } from './filter/filter.component';
 import { TapComponent } from './tap/tap.component';
+import { ConcatMapComponent } from './concat-map/concat-map.component';
 
 
 
@@ -29,7 +30,8 @@ import { TapComponent } from './tap/tap.component';
     IntervalComponent,
     TimerComponent,
     FilterComponent,
-    TapComponent
+    TapComponent,
+    ConcatMapComponent
   ],
   imports: [
     CommonModule,
