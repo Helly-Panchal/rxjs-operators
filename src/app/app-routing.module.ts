@@ -11,6 +11,7 @@ import { MapComponent } from './operators/map/map.component';
 import { IntervalComponent } from './operators/interval/interval.component';
 import { TimerComponent } from './operators/timer/timer.component';
 import { FilterComponent } from './operators/filter/filter.component';
+import { TapComponent } from './operators/tap/tap.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'of', pathMatch: 'full' },
@@ -25,6 +26,7 @@ const routes: Routes = [
   { path: 'interval', component: IntervalComponent },
   { path: 'timer', component: TimerComponent },
   { path: 'filter', component: FilterComponent },
+  { path: 'tap', component: TapComponent },
 ];
 
 @NgModule({

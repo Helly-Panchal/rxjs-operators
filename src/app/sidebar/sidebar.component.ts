@@ -52,6 +52,10 @@ export class SidebarComponent {
       name: 'Filter',
       link: '/filter'
     },
+    {
+      name: 'Tap',
+      link: '/tap'
+    },
   ];
 
 }
