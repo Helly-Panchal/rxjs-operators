@@ -18,9 +18,11 @@ import { SwitchMapComponent } from './operators/switch-map/switch-map.component'
 import { ForkJoinComponent } from './operators/fork-join/fork-join.component';
 import { DistinctUntilChangedComponent } from './operators/distinct-until-changed/distinct-until-changed.component';
 import { ShareReplayComponent } from './operators/share-replay/share-replay.component';
+import { IntroductionComponent } from './operators/introduction/introduction.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'of', pathMatch: 'full' },
+  { path: '', redirectTo: 'intro', pathMatch: 'full' },
+  { path: 'intro', component: IntroductionComponent },
   { path: 'of', component: OfOperatorComponent },
   { path: 'from', component: FromOperatorComponent },
   { path: 'take', component: TakeComponent },

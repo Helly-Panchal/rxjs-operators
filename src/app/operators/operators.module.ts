@@ -19,6 +19,7 @@ import { SwitchMapComponent } from './switch-map/switch-map.component';
 import { ForkJoinComponent } from './fork-join/fork-join.component';
 import { DistinctUntilChangedComponent } from './distinct-until-changed/distinct-until-changed.component';
 import { ShareReplayComponent } from './share-replay/share-replay.component';
+import { IntroductionComponent } from './introduction/introduction.component';
 
 
 
@@ -41,7 +42,8 @@ import { ShareReplayComponent } from './share-replay/share-replay.component';
     SwitchMapComponent,
     ForkJoinComponent,
     DistinctUntilChangedComponent,
-    ShareReplayComponent
+    ShareReplayComponent,
+    IntroductionComponent
   ],
   imports: [
     CommonModule,
