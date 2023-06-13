@@ -72,6 +72,10 @@ export class SidebarComponent {
       name: 'ForkJoin',
       link: '/fork-join'
     },
+    {
+      name: 'DistinctUntilChanged',
+      link: '/distinct-until-changed'
+    },
   ];
 
 }
