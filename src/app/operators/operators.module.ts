@@ -15,6 +15,7 @@ import { FilterComponent } from './filter/filter.component';
 import { TapComponent } from './tap/tap.component';
 import { ConcatMapComponent } from './concat-map/concat-map.component';
 import { MergeMapComponent } from './merge-map/merge-map.component';
+import { SwitchMapComponent } from './switch-map/switch-map.component';
 
 
 
@@ -33,7 +34,8 @@ import { MergeMapComponent } from './merge-map/merge-map.component';
     FilterComponent,
     TapComponent,
     ConcatMapComponent,
-    MergeMapComponent
+    MergeMapComponent,
+    SwitchMapComponent
   ],
   imports: [
     CommonModule,

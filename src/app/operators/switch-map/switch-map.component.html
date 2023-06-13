@@ -1,12 +1,12 @@
-<h3 class="d-flex justify-content-center pt-3">MergeMap Operator</h3>
+<h3 class="d-flex justify-content-center pt-3">SwitchMap Operator</h3>
 
 <div class="container d-flex justify-content-center ps-4 pe-4 pt-3">
   <p class="">
-    💡 RxJS mergeMap() operator is a transformation operator that applies a project function on each source value of an
-    Observable, which is later merged in the output Observable. <br>
-    💡 Use mergeMap if you simply want to flatten the data into one Observable, use switchMap if you need to flatten the
-    data into one Observable but only need the latest value and use concatMap if you need to flatten the data into one
-    Observable and the order is important to you.
+    💡 SwitchMap only emits values from the latest inner observable and cancels any previous inner observables. <br>
+    💡 Switchmap is used when you have multiple api calls depending on each other. This works perfectly for scenarios
+    like typeaheads where you are no longer concerned with the response of the previous request when a new input
+    arrives. <br>
+    💡 SwitchMap most commonly used in Search functionality
   </p>
 </div>
 

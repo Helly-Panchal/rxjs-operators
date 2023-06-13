@@ -64,6 +64,10 @@ export class SidebarComponent {
       name: 'MergeMap',
       link: '/merge-map'
     },
+    {
+      name: 'SwitchMap',
+      link: '/switch-map'
+    },
   ];
 
 }
