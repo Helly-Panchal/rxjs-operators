@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subject, forkJoin, from, takeUntil } from 'rxjs';
 
 @Component({
@@ -6,7 +6,7 @@ import { Subject, forkJoin, from, takeUntil } from 'rxjs';
   templateUrl: './fork-join.component.html',
   styleUrls: ['./fork-join.component.scss']
 })
-export class ForkJoinComponent implements OnInit {
+export class ForkJoinComponent implements OnInit, OnDestroy {
   public sub$ = new Subject();
   public container: string[] = [];
 
@@ -17,5 +17,10 @@ export class ForkJoinComponent implements OnInit {
     forkJoin([this.obs1$, this.obs2$]).pipe(takeUntil(this.sub$)).subscribe((res: any) => {
       this.container.push(res);
     })
+  }
+
+  public ngOnDestroy(): void {
+    this.sub$.next(0);
+    this.sub$.unsubscribe();
   }
 }
