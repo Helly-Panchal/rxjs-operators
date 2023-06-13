@@ -20,6 +20,7 @@ import { ForkJoinComponent } from './fork-join/fork-join.component';
 import { DistinctUntilChangedComponent } from './distinct-until-changed/distinct-until-changed.component';
 import { ShareReplayComponent } from './share-replay/share-replay.component';
 import { IntroductionComponent } from './introduction/introduction.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -43,7 +44,8 @@ import { IntroductionComponent } from './introduction/introduction.component';
     ForkJoinComponent,
     DistinctUntilChangedComponent,
     ShareReplayComponent,
-    IntroductionComponent
+    IntroductionComponent,
+    FooterComponent
   ],
   imports: [
     CommonModule,
