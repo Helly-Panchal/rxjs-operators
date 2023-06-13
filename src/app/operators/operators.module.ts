@@ -16,6 +16,7 @@ import { TapComponent } from './tap/tap.component';
 import { ConcatMapComponent } from './concat-map/concat-map.component';
 import { MergeMapComponent } from './merge-map/merge-map.component';
 import { SwitchMapComponent } from './switch-map/switch-map.component';
+import { ForkJoinComponent } from './fork-join/fork-join.component';
 
 
 
@@ -35,7 +36,8 @@ import { SwitchMapComponent } from './switch-map/switch-map.component';
     TapComponent,
     ConcatMapComponent,
     MergeMapComponent,
-    SwitchMapComponent
+    SwitchMapComponent,
+    ForkJoinComponent
   ],
   imports: [
     CommonModule,

@@ -15,6 +15,7 @@ import { TapComponent } from './operators/tap/tap.component';
 import { ConcatMapComponent } from './operators/concat-map/concat-map.component';
 import { MergeMapComponent } from './operators/merge-map/merge-map.component';
 import { SwitchMapComponent } from './operators/switch-map/switch-map.component';
+import { ForkJoinComponent } from './operators/fork-join/fork-join.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'of', pathMatch: 'full' },
@@ -33,6 +34,7 @@ const routes: Routes = [
   { path: 'concat-map', component: ConcatMapComponent },
   { path: 'merge-map', component: MergeMapComponent },
   { path: 'switch-map', component: SwitchMapComponent },
+  { path: 'fork-join', component: ForkJoinComponent },
 ];
 
 @NgModule({

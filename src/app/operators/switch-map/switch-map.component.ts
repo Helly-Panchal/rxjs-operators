@@ -12,7 +12,7 @@ export class SwitchMapComponent {
   public container: string[] = [];
 
   public ngOnInit(): void {
-    // ex-3 mergeMap
+    // switchMap
     this.source$.pipe(
       takeUntil(this.sub$),
       switchMap(data => this.getData(data)),

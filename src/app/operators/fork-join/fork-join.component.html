@@ -1,0 +1,32 @@
+<h3 class="d-flex justify-content-center pt-3">ForkJoin Operator</h3>
+
+<div class="container d-flex justify-content-center ps-4 pe-4 pt-3">
+  <p class="">
+    💡 The forkJoin operator in RxJS is used to combine multiple observables and wait for all of them to emit a value,
+    and then emit an array of the last emitted values from each observable. It essentially waits for all the observables
+    to complete and collects their final values. <br>
+
+    💡 When the forkJoin observable completes, the subscribe callback is called with the resulting array as the
+    parameter. <br>
+    💡 The forkJoin operator is commonly used in scenarios where you need to wait for multiple observables to complete
+    and
+    collect their final results before performing further operations.
+    E.g. ngOnInit() <br>
+    💡 The forkJoin operator will emit a single value containing an array of results when all the source observables
+    complete successfully. If any of the source observables emit an error, the forkJoin operator will immediately
+    propagate that error and will not emit a value.
+
+  </p>
+</div>
+
+<div class="row row-cols-1 row-cols-md-4 p-4">
+  <div class="col-md-12 mt-4">
+    <p class="bg-light border rounded py-2 px-3 text-center">
+      <strong>Data: from(['Tech', 'Comedy', 'News']) , from([1,2,3,4,5])</strong>
+    </p>
+    <hr>
+    <ul>
+      <li *ngFor="let value of container">{{value}}</li>
+    </ul>
+  </div>
+</div>

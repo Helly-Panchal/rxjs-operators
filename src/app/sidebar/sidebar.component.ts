@@ -68,6 +68,10 @@ export class SidebarComponent {
       name: 'SwitchMap',
       link: '/switch-map'
     },
+    {
+      name: 'ForkJoin',
+      link: '/fork-join'
+    },
   ];
 
 }
