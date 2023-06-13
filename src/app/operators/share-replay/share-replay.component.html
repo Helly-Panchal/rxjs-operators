@@ -1,1 +1,31 @@
-<p>share-replay works!</p>
+<h3 class="d-flex justify-content-center pt-3">ShareReplay Operator</h3>
+
+<div class="container d-flex justify-content-center ps-4 pe-4 pt-3">
+  <p class="">
+    💡 The shareReplay operator in RxJS is used to multicast the emissions of an observable to multiple subscribers
+    while replaying a specified number of previous emissions to new subscribers. It is often used in scenarios where you
+    want to cache and share the results of an expensive or asynchronous operation across multiple subscribers. <br>
+    💡 The shareReplay operator ensures that all subscribers share the same observable execution and receive the same
+    set
+    of previous values. It is useful when you want to avoid redundant operations and ensure consistent results across
+    multiple subscribers.
+  </p>
+</div>
+
+<div class="row row-cols-1 row-cols-md-4 p-4">
+  <div class="col-md-12 mt-4">
+    <p class="bg-light border rounded py-2 px-3 text-center">
+      <strong>Data: interval(2000).pipe(take(6), shareReplay(3))</strong>
+    </p>
+    <hr>
+    <ul>
+      <li *ngFor="let value of obs1Container">{{value}}</li>
+    </ul>
+    <ul>
+      <li *ngFor="let value of obs2Container">{{value}}</li>
+    </ul>
+    <ul>
+      <li *ngFor="let value of obs3Container">{{value}}</li>
+    </ul>
+  </div>
+</div>
