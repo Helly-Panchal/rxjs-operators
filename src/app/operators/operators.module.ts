@@ -18,6 +18,7 @@ import { MergeMapComponent } from './merge-map/merge-map.component';
 import { SwitchMapComponent } from './switch-map/switch-map.component';
 import { ForkJoinComponent } from './fork-join/fork-join.component';
 import { DistinctUntilChangedComponent } from './distinct-until-changed/distinct-until-changed.component';
+import { ShareReplayComponent } from './share-replay/share-replay.component';
 
 
 
@@ -39,7 +40,8 @@ import { DistinctUntilChangedComponent } from './distinct-until-changed/distinct
     MergeMapComponent,
     SwitchMapComponent,
     ForkJoinComponent,
-    DistinctUntilChangedComponent
+    DistinctUntilChangedComponent,
+    ShareReplayComponent
   ],
   imports: [
     CommonModule,

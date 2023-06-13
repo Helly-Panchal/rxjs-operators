@@ -17,6 +17,7 @@ import { MergeMapComponent } from './operators/merge-map/merge-map.component';
 import { SwitchMapComponent } from './operators/switch-map/switch-map.component';
 import { ForkJoinComponent } from './operators/fork-join/fork-join.component';
 import { DistinctUntilChangedComponent } from './operators/distinct-until-changed/distinct-until-changed.component';
+import { ShareReplayComponent } from './operators/share-replay/share-replay.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'of', pathMatch: 'full' },
@@ -37,6 +38,7 @@ const routes: Routes = [
   { path: 'switch-map', component: SwitchMapComponent },
   { path: 'fork-join', component: ForkJoinComponent },
   { path: 'distinct-until-changed', component: DistinctUntilChangedComponent },
+  { path: 'share-replay', component: ShareReplayComponent },
 ];
 
 @NgModule({

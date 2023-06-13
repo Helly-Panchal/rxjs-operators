@@ -76,6 +76,10 @@ export class SidebarComponent {
       name: 'DistinctUntilChanged',
       link: '/distinct-until-changed'
     },
+    {
+      name: 'ShareReplay',
+      link: '/share-replay'
+    },
   ];
 
 }
